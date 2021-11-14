@@ -7,7 +7,7 @@
             "actions": [
                 {
                     "name": "Cyclic",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "b476da15-8805-4d10-abd8-f81fda87e6af",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -25,6 +25,14 @@
                     "name": "Pedals",
                     "type": "PassThrough",
                     "id": "53dc6403-240e-47d5-a1bf-17eba6a9ec52",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Look",
+                    "type": "PassThrough",
+                    "id": "c5ecab87-88ec-4495-ab84-ba220033c9f1",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
@@ -87,6 +95,17 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "",
+                    "id": "2d02ae4d-3648-4323-aa2c-2715adb44357",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cyclic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "Arrows",
                     "id": "2fa77936-c8c6-48a8-aa54-6ec429d8a1fd",
                     "path": "1DAxis",
@@ -112,6 +131,39 @@
                     "name": "positive",
                     "id": "d589a8a1-f72c-4a3b-9789-74dbc916e434",
                     "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pedals",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "RightStick",
+                    "id": "10bcfba3-b5b7-48b4-abee-9b9e96d6d02a",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pedals",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "5a8c6bc8-4525-42e0-b465-b0fbd3d51f0c",
+                    "path": "<Gamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pedals",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "3c932abd-f44f-4969-9c86-256cd298c68e",
+                    "path": "<Gamepad>/rightStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -149,6 +201,72 @@
                     "processors": "",
                     "groups": "",
                     "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "RightStick",
+                    "id": "72a3c47f-6410-481d-8fa0-cf27bd0c0d2a",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "2c44b525-40cd-44e0-afba-eb3b78df2485",
+                    "path": "<Gamepad>/rightStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "b9dbcb56-a556-49a4-a94c-589066599a7d",
+                    "path": "<Gamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "RightStick",
+                    "id": "84301e43-ac86-42b7-ae70-e19a4042d741",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "a6531d5f-886f-452d-a40a-5ef55659613d",
+                    "path": "<Gamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "9bc36b6d-ba54-4dcf-8db7-2ecda292388b",
+                    "path": "<Gamepad>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
