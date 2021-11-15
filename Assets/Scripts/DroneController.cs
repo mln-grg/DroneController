@@ -35,9 +35,11 @@ namespace MG
             HandleEngines();
             HandleControls();
             CheckGround();
+            //CameraControllerNonCinemachine.instance.FollowTarget(transform.position);
+            //CameraControllerNonCinemachine.instance.RotateCamera(transform);
         }
-
-       void CheckGround()
+   
+        void CheckGround()
         {
             isGrounded= Physics.CheckSphere(groundCheck.position, groundCheckRadius, WhatIsGround);
         }

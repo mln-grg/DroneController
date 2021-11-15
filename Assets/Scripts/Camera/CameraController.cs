@@ -10,6 +10,9 @@ namespace MG
         private CinemachineFreeLook cinemachineCamera;
 
         [SerializeField] float lookSpeed;
+        float yaw;
+        float finalYaw;
+        [SerializeField] float yawPower;
 
         private void Awake()
         {
@@ -18,8 +21,9 @@ namespace MG
 
         private void Update()
         {
-            float delta = input.Look;
-            cinemachineCamera.m_XAxis.Value += delta * lookSpeed * Time.deltaTime;
+            yaw+= input.Look*yawPower;
+            finalYaw = Mathf.Lerp(finalYaw, yaw, Time.deltaTime * lookSpeed);
+            cinemachineCamera.m_XAxis.Value = finalYaw;
         }
     }
 }
